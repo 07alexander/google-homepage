@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Google</title>
+  </head>
+  <style>
+    .topnav{
+      
+      text-align: right;
+    }
+    a:link{
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover{
+      text-decoration: underline;
+    }
+    a:visited{
+      color: black;
+      text-decoration: none;
+    }
+    a{
+      font: Roboto;
+      font-size: 13px/27px;
+      padding: 0.5em;
+    }
+
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      position:relative;
+      top: 150px;
+    }
+
+    #fakebox-container,
+    #realbox-container{
+      margin: 0 auto 0 auto;
+      min-width: 410px;
+      width: var(--content-width);
+      --searchbox-height:44px;
+      flex-shrink: 0;
+      
+    }
+
+    body *{
+      font-family: 'Roboto', arial, sans-serif;
+    }
+
+  </style>
+  <body>
+    <div class="topnav">
+      <a href="https://mail.google.com/mail/?tab=rm&ogbl">Gmail</a>
+      <a href="https://www.google.com/imghp?hl=en&tab=ri&ogbl">Images</a>
+      
+    </div>
+    <img  src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+
+    <div  id="fakebox-container">
+        <div id="fakebox">
+          <div class="search-icon"></div>
+          <div id="fakebox-text">Search Google or type a URL</div>
+          <input id="fakebox-input" autocomplete="off" tabindex="-1" type="url" aria-hidden="true">
+          <div id="fakebox-cursor"></div>
+          <button id="fakebox-microphone" class="microphone-icon" title="Search by voice"></button>
+        </div>
+    </div>
+    <!--
+    <div id="realbox-container" hidden>
+        <div id="realbox-input-wrapper">
+          <div id="realbox-icon" class="search-icon" data-realbox-icon-class="search-icon"></div>
+          <input id="realbox" type="search" autocomplete="off" spellcheck="false" aria-live="polite" autofocus>
+          <button id="realbox-microphone" class="microphone-icon" hidden></button>
+          <div id="realbox-matches"></div>
+        </div>
+    </div>
+  -->
+
+  </body>
+</html>
