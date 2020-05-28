@@ -28,15 +28,6 @@
     top: 150px;
   }
 
-  #fakebox-container,
-  #realbox-container{
-    margin: 0 auto 0 auto;
-    min-width: 410px;
-    width: var(--content-width);
-    --searchbox-height:44px;
-    flex-shrink: 0;
-    
-  }
 
   body *{
     font-family: 'Roboto', arial, sans-serif;
