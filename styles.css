@@ -15,6 +15,12 @@ a:hover{
     display: flex;
     align-items: center;
     font-size: 13px;
+    line-height: 24px;
+    outline: none;
+    vertical-align: middle;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
 }
 
 .topNav a{
@@ -22,20 +28,113 @@ a:hover{
 }
 
 .navOptions{
-    width: 28px;
-    align-self: center;
-    margin-left: 2px;
-    margin-right: 5px;
+    width: 23px;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 10px;
 }
+
+.searchBar{
+    display:flex;
+    width: 550px;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 24px;
+    justify-content: center;
+    margin: auto;
+    
+
+}
+
+.input{
+    border-color: transparent;
+    width: 480px;
+    justify-content: left;
+    font-size: 16px;
+}
+.input:focus{
+    outline: none;
+}
+
 
 .searchIcon{
     width: 20px;
+    margin-top: 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+    fill: grey;
 }
 
 .micIcon{
     width: 20px;
+    margin-top: 8px;
+    margin-right: 5px;
 }
 
 .custIcon{
     width: 20px;
+}
+
+.logo{
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.searchButton{
+    text-align: center;
+    margin-top: 40px;
+}
+
+button{
+    background-color: transparent;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    font-size: 15px;
+    
+    
+}
+
+button:hover{
+    border-color: grey;
+}
+
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   opacity: 90%;
+   color: white;
+   text-align: center;
+   padding-bottom: 10px;
+}
+
+.leftFoot{
+    position: absolute;
+    font-size: 15px;
+}
+
+.leftFoot a{
+    margin-right: 15px;
+    margin-left: 15px;
+    
+}
+
+.rightFoot{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+
+.rightFoot a{
+    margin-right: 15px;
+    margin-left: 15px;
 }
